@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import { Component } from "react";
 
-// Component that holds the basic UI elements
+// component that holds the basic UI elements
 class BaseComponent extends Component {
   constructor(props) {
     super(props);
@@ -24,6 +24,7 @@ class BaseComponent extends Component {
     };
   }
 
+  // endpoint for api back-end service
   onSubmitClick() {
     fetch("http://localhost:54725/api/Routes/ArrivalTimes", {
       method: "post",
